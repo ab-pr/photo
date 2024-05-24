@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Roto';
+    src: url('../fonts/roto.otf') format('opentype');
+}
+
+body {
+    margin: 0;
+    font-family: 'Roto';
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #273643;
+    color: white;
+}
+
+.navbar .brand {
+    font-family: 'Roto', cursive;
+    font-size: 24px;
+}
+
+.navbar .brand .AP-Film {
+    font-size: xx-large;
+    color: white;
+    text-shadow: 3px 3px 0 black;
+}
+
+.navbar .contact-button {
+    color: white;
+    font-size: xx-large;
+    text-shadow: 3px 3px 0 black;
+    font-family: 'Roto', cursive;
+    padding: 10px 20px;
+    background-color: #273643;
+    color: white;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.navbar .contact-button:hover {
+    background-color: #2e4050;
+}
+
+.vwes {
+    position: relative; /* Added */
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.vwesbg {
+    filter: brightness(50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.vweslogo {
+    position: absolute; /* Changed from 'center' to 'absolute' */
+    top: 50%; /* Move the logo 50% from the top */
+    left: 50%; /* Move the logo 50% from the left */
+    transform: translate(-50%, -50%); /* Center the logo */
+    z-index: 1;
+    max-width: 90%; /* Set the maximum width to 100% of its container */
+    max-height: 90%; /* Set the maximum height to 100% of its container */
+}
+
+.aboutme {
+    width: 100%;
+    height: 500px;
+    background-color: black;
+}
+
