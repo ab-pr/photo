@@ -4,6 +4,7 @@
 }
 
 body {
+    background-color: #d9ffa7;
     margin: 0;
     font-family: 'Roto';
 }
@@ -13,7 +14,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #273643;
+    background-color: #00ad8b;
     color: white;
 }
 
@@ -24,18 +25,18 @@ body {
 
 .navbar .brand .AP-Film {
     font-size: xx-large;
-    color: white;
-    text-shadow: 3px 3px 0 black;
+    color: #d9ffa7;
+    text-shadow: 2px 2px 0 #087743;
 }
 
 .navbar .contact-button {
     color: white;
     font-size: xx-large;
-    text-shadow: 3px 3px 0 black;
+    text-shadow: 3px 3px 0 #087743;
     font-family: 'Roto', cursive;
     padding: 10px 20px;
-    background-color: #273643;
-    color: white;
+    background-color: #00ad8b;
+    color: #d9ffa7;
     border: none;
     border-radius: 1px;
     cursor: pointer;
@@ -43,7 +44,7 @@ body {
 }
 
 .navbar .contact-button:hover {
-    background-color: #2e4050;
+    background-color: #009c7d;
 }
 
 .vwes {
@@ -72,7 +73,75 @@ body {
 
 .aboutme {
     width: 100%;
-    height: 500px;
-    background-color: black;
+    height: 900px;
+    background-color: #1a8c56;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center;
+    justify-content: center; /* Center children horizontally and vertically */
+    text-align: center;
 }
 
+.aboutmetitle {
+    text-decoration: underline #FF6E7C;
+    color: white;
+    font-size: 60px;
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+    margin-top: 40px;
+}
+
+.aboutmecontent {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center children horizontally */
+    margin-top: 20px;
+}
+
+.aboutmeimg {
+    filter: brightness(95%);
+    transform: rotate(-10deg);
+    z-index: 0;
+    padding-left: 20px;
+    width: 500px; /* Adjust image width as needed */
+    max-width: 500px; /* Ensure the image doesn't exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.aboutmep {
+    z-index: 1;
+    text-align: center;
+    max-width: 400px;
+    text-shadow: -1px 2px 0 rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 34px;
+    margin-left: 20px; /* Add margin to create space between image and text */
+}
+
+.gallerytitle {
+    text-align: center;
+    text-decoration: underline #17ae00;
+    color: rgb(0, 213, 75);
+    font-size: 60px;
+    text-shadow: 2px 2px 0 rgb(0, 0, 0);
+    margin-top: 40px;
+}
+
+.gallery {
+    padding-top: 40px;
+    background-color: #087743;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.photo {
+    width: 600px; /* Adjust photo width as needed */
+    margin-bottom: 20px;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional: Add a subtle shadow effect */
+}
