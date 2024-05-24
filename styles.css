@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Roto';
-    src: url('../fonts/roto.otf') format('opentype');
+    src: url('fonts/roto.otf') format('opentype');
 }
 
 body {
@@ -33,7 +33,7 @@ body {
     color: white;
     font-size: xx-large;
     text-shadow: 3px 3px 0 #087743;
-    font-family: 'Roto', cursive;
+    font-family: 'Roto';
     padding: 10px 20px;
     background-color: #00ad8b;
     color: #d9ffa7;
